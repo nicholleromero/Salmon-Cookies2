@@ -1,0 +1,30 @@
+
+
+body {
+  font-family: "Monotype Corsiva";
+  background-color: #FA8258;
+  color: white;
+  margin: 10px auto 10px auto;
+  text-align: center;
+}
+
+ul {
+  font-family: "Impact";
+  background-color: grey;
+  width: 200px;
+  margin: 10px auto 10px auto;
+  font-size: 23px;
+  color: #ccccff;
+  text-align: left;
+}
+
+li{
+  font-family: "Georgia";
+  font-size: 15px;
+  color: #33cccc;
+}
+
+footer{
+  background-color: black;
+  text-align: right;
+}

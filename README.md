@@ -1,1 +1,1 @@
-# Salmon-Cookies2
+This assignment was challenging for me.  There were a lot of moving pieces and I am not comfortable yet with objects, methods, and functions.  However, I feel like I have a stronger understanding of them now that I have worked through the assignment.
