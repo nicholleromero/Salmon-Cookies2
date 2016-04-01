@@ -21,7 +21,7 @@ var washingtonSquare = new cookieShop ('Washington Square', 11, 38, 1.9);
 var sellwood = new cookieShop ('Sellwood', 20, 48, 3.3);
 var pearlDistrict = new cookieShop ('Pearl District', 3, 24, 2.6);
 
-var hours = ["10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm"]
+var hours = ["10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "Total"]
 var shops = [pioneerSquare, portlandAirport, washingtonSquare, sellwood, pearlDistrict]
 
 function addNumbers () {
@@ -35,16 +35,23 @@ function addNumbers () {
   listItem.innerHTML = sellwood.numCustomers();
   var listItem = document.getElemntById("pearlDistrict");
   listItem.innerHTML = pearlDistrict.numCustomers();
+  //var listItem = document.getElementById("hour");
 }
 
 function addNumbersToList(place, cart) {
   var list = document.getElementById(place);
     for (var x = 0; x < hours.length; x++) {
-      var listNumber = "<li>"+hours[x]+": "+cart.numCustomers()+" cookies"+"</li>";
+      var listNumber = "<tr>"+cart.numCustomers()+"</tr>";
       list.innerHTML += listNumber;
   }
-    list.innerHTML += "<li>"+"Total: "+cart.total+" cookies"+"</li>"
+    list.innerHTML += "<tr>" +cart.total+"</tr>"
 }
+
+var listItem = document.getElementById("hour");
+    for(var times = 0; times < hours.length; times++){
+        var listTable = listItem.innerHTML += "<th>"+ hours[times] + "</th>";
+}
+
 
 shops.push(pioneerSquare);
 shops.push(portlandAirport);
