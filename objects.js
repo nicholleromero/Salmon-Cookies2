@@ -37,13 +37,27 @@ function addNumbers () {
   listItem.innerHTML = pearlDistrict.numCustomers();
 }
 
+
+
 function addNumbersToList(place, cart) {
   var list = document.getElementById(place);
-    for (var x = 0; x < hours.length; x++) {
-      var listNumber = "<li>"+hours[x]+": "+cart.numCustomers()+" cookies"+"</li>";
-      list.innerHTML += listNumber;
+//  for (var x = 0; x < hours.length; x++) {
+//    var listNumber = "<th>"+hours[x]+"</th>"
+//    list.innerHTML += listNumber;
+//  }
+    for (var y = 0; y <hours.length; y++) {
+      var listAmount = "<td>"+cart.numCustomers()+"</td>"
+    //  ": "+cart.numCustomers()+" cookies"+"</li>";
+
+      list.innerHTML += listAmount;
   }
-    list.innerHTML += "<li>"+"Total: "+cart.total+" cookies"+"</li>"
+}
+//    list.innerHTML += "<li>"+"Total: "+cart.total+" cookies"+"</li>"
+var listItem = document.getElementById("hours");
+  for(var times = 0; times < hours.length; times++) {
+    var listTable = "<th>"+hours[times]+"</th>";
+    listItem.innerHTML += listTable;
+
 }
 
 shops.push(pioneerSquare);
