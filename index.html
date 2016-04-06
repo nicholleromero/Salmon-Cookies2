@@ -19,30 +19,37 @@
     </p>
     <p>Number of cookies sold at each location:</p>
 <table>
-  <tbody>
+  <tbody id="place">
     <tr id="hours">
         <td> </td>
     </tr>
-    <tr id="pioneerSquare">
-      <td> Pioneer Square </td>
-    </tr>
-    <tr id="portlandAirport">
-      <td> Portland Airport </td>
-    </tr>
-    <tr id="washingtonSquare">
-      <td> Washington Square </td>
-    </tr>
-    <tr id="sellwood">
-      <td> Sellwood </td>
-    </tr>
-    <tr id="pearlDistrict">
-      <td> Pearl District </td>
-    </tr>
+
   </tbody>
   </table>
-    <footer>
-      That's all for this time!
-    </footer>
+
+<style>
+  form, #display {display: inline-block; width: 600px;}
+
+  input.required {background-color: red;}
+</style>
+
+
+<body>
+  <form>
+    <label for="storeName"> Store Name: </label>
+    <input type="text" id="storeName" name="store"><br>
+    <label for="minCustomers"> Minimum Number of Customers: </label>
+    <input type="text" id="minCustomers" name="min"><br>
+    <label for="maxCustomers"> Maximum Number of Customers: </label>
+    <input type="text" id="maxCumstomers" name="max"><br>
+    <label for="AverageCustomers"> Average Customers: </label>
+    <input type="text" id="averageCustomers" name="average"><br>
+    <input type="button" value="Add Store" onclick="evaluateForm(this.form)">
+  </form>
+  <div id="diplay"></div>
+</body>
+
+
     <script type="text/javascript" src="objects.js"></script>
 
   </body>
